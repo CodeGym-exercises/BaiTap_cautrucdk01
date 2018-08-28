@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bai 6</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let ds = parseInt(prompt("Nhap vao doanh so ban hang: "));
+		let hh = 0;
+		if(ds==0){
+			alert("khong co hh nhe !!");
+		}else if(ds>100000&&ds<=500000){
+			hh=ds*0.1;
+			alert("Muc doanh so dat duoc la "+ ds + " => hoa hong 10%: " +hh);
+		}else if(ds>500000&&ds<=5000000){
+			hh=ds*0.2;
+			alert("Muc doanh so dat duoc la "+ ds + " => hoa hong 20%: " +hh);
+		}else if(ds>5000000){
+			hh=ds*0.4;
+			alert("Muc doanh so dat duoc la "+ ds + " => hoa hong 40%: " +hh);
+		}else{
+			alert("Gia tri ban nhap khong chinh xac")
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bai 5</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let kt = parseInt(prompt("Nhap vao diem kiem tra: "));
+		let gk = parseInt(prompt("Nhap vao diem giua ky: "));
+		let ck = parseInt(prompt("Nhap vao diem cuoi ky: "));
+		let tb = (kt + gk*2 + ck*3)/6;
+		if(tb==0){
+			alert("Oc cho vl !!");
+		}else if(tb>0&&tb<4){
+			alert(tb+"(diem), xep loai kem!!");
+		}else if(tb>=4&&tb<7){
+			alert(tb+"(diem), xep loai Trung binh!!");
+		}else if(tb>=7&&tb<=8){
+			alert(tb+"(diem), xep loai Kha!!");
+		}else if(tb>8&&tb<=10){
+			alert(tb+"(diem), xep loai gioi!!");
+		}else{
+			alert("Gia tri ban nhap khong chinh xac")
+		}
+	</script>
+</body>
+</html>
